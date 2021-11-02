@@ -98,6 +98,6 @@ ConfigureBench(HASH_BENCH
 ConfigureBench(DISTINCT_COUNT_ESTIMATOR_BENCH
   distinct_count_estimator_bench.cu)
 
-#TODO: Port priority_queue benchmark to google benchmark
-add_executable(PRIORITY_QUEUE_BENCH "${CMAKE_CURRENT_SOURCE_DIR}/priority_queue/priority_queue_bench.cu")
-target_link_libraries(PRIORITY_QUEUE_BENCH cuco)
+###################################################################################################
+set(PRIORITY_QUEUE_BENCH_SRC "${CMAKE_CURRENT_SOURCE_DIR}/priority_queue/priority_queue_bench.cu")
+ConfigureBench(PRIORITY_QUEUE_BENCH "${PRIORITY_QUEUE_BENCH_SRC}")
