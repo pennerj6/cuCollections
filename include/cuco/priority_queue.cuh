@@ -16,7 +16,7 @@
 
 #pragma once
 
-#include <cuco/allocator.hpp>
+#include <cuco/utility/allocator.hpp>
 
 #include <thrust/functional.h>
 
